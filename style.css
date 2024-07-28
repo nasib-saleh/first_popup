@@ -1,0 +1,101 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: all 0.4s ease;
+}
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+}
+.container button {
+	border: none;
+	outline: none;
+	background-color: brown;
+	color: white;
+	font-size: 25px;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+.container button:hover {
+	scale: 0.8;
+}
+.message {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	scale: 0;
+	transition: scale 0.2s ease;
+}
+.message.active {
+	scale: 1;
+}
+.message .box {
+	width: 400px;
+	background-color: white;
+	padding: 30px;
+	position: relative;
+	border-radius: 12px;
+	text-align: center;
+}
+.message i {
+	font-size: 80px;
+	color: rebeccapurple;
+	text-shadow: 16px -5px 0px #ddd,
+							-16px -5px 0 #ddd,
+							0px -12px 0 #ddd;
+}
+.message .box h1 {
+	margin: 20px 0 10px;
+	color: red;
+	font-size: 2.5rem;
+}
+.message .box p {
+	color: #444;
+	line-height: 20px;
+	margin: 20px 0 20px;
+	letter-spacing: 1.1px;
+}
+.message .box button {
+	background-color: red;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 10px 20px;
+	width: 150px;
+	font-size: 18px;
+	cursor: pointer;
+	margin: 20px 0 0;
+	border-radius: 10px;
+	margin: 0 5px;
+}
+.message .box #close {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	width: 20px;
+	height: 20px;
+	font-size: 25px;
+	cursor: pointer;
+	margin: 0;
+}
+.message .box #close:hover {
+	color: red;
+}
